@@ -1,0 +1,44 @@
+import java.util.*;
+public class capitalize_word
+{
+    public static void main(String args[])
+    {
+    Scanner in=new Scanner(System.in);
+    char c,ch;
+    String str,w="",st1="";
+    int i,j,l,l2;
+    System.out.println("Enter the string:");
+    str=in.nextLine()+" ";
+    l=str.length();
+        
+    for(i=0;i<l;i++)
+    {
+     c=str.charAt(i);  
+     if(c==' ')
+     {
+      l2=w.length();
+     for(j=0;j<l2;j++)
+     {   
+         ch=w.charAt(j);
+         if(j==0 || j==l2-1)
+         st1=st1+Character.toUpperCase(ch);
+         else
+         st1=st1+ch;
+        }
+      System.out.print(st1+" ");
+      
+      
+      w="";
+      st1="";
+    }
+    else
+    w=w+c;
+   }
+
+    }
+  }
+ 
+
+  
+  
+  
